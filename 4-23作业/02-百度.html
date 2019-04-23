@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+        a {
+            color: #333;
+        }
+        button {
+            outline: none;
+            border: none;
+        }
+
+        .header {
+            padding-left: 10px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+        }
+        .header .left {
+            float: left;
+        }
+        .header .left span {
+            margin-right: 5px;
+        }
+        .header .left .weather-wrap {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+            padding-right: 6px;
+            height: 30px;
+        }
+        .header .left .weather-wrap::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 10px;
+            width: 2px;
+            height: 12px;
+            background: #999;
+        }
+        .header .left .weather-wrap .pollute {
+            color: orange;
+        }
+        .header .left .link {
+            float: left;
+        }
+        .header .left .link a {
+            margin-right: 10px;
+        }
+        .header .right {
+            float: right;
+        }
+        .header .right .menu {
+            float: left;
+        }
+        .header .right .menu li {
+            float: left;
+            margin-right: 30px;
+        }
+        .header .right .menu li a {
+            font-weight: bold;
+        }
+        .header .right .other {
+            float: left;
+        }
+        .header .right .other .profile {
+            float: left;
+        }
+        .header .right .other .profile a {
+            margin-right: 20px;
+        }
+        .header .right .other .more {
+            height: 30px;
+            width: 80px;
+            background: #398bfb;
+            color: #fff;
+            outline: none;
+            border: none;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 900px;
+            /*min-height: 500px;*/
+        }
+        .main .searchBlock {
+            margin: 0 auto;
+            width: 640px;
+        }
+        .main .searchBlock .logo {
+            padding-top: 40px;
+            text-align: center;
+        }
+        .main .search-wrap {
+            position: relative;
+            height: 38px;
+            border: 1px solid #ccc;
+        }
+        .main .search-wrap input {
+            float: left;
+            padding-right: 38px;
+            width: 500px;
+            height: 38px;
+            border: none;
+            outline: none;
+            text-indent: 5px;
+        }
+        .main .search-wrap .icon {
+            position: absolute;
+            left: 510px;
+            top: 10px;
+            width: 18px;
+            height: 18px;
+            background: url("images/camera_new_5606e8f.png") no-repeat 0 0;
+        }
+        .main .search-wrap button {
+            margin-top: -1px;
+            float: right;
+            width: 100px;
+            height: 40px;
+            background: #398bfb;
+            color: #fff;
+            text-align: center;
+        }
+        .footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        .footer a {
+            font-size: 12px;
+        }
+        .footer .code  {
+            padding: 20px 0;
+        }
+        .footer .code img {
+            /*margin-bottom: 5px;*/
+        }
+        .footer .flink {
+            margin-bottom: 10px;
+        }
+        .footer .flink a {
+            margin-right: 25px;
+            color: #666;
+        }
+        .footer .copy-right {
+            color: #666;
+        }
+        .footer .copy-right a {
+            margin-right: 5px;
+            color: #666;
+        }
+        .footer .copy-right .copy {
+            display: inline-block;
+            width: 16px;
+            height: 17px;
+            background: url("images/icons_5859e57.png") no-repeat -599px -96px;
+            vertical-align: -3px;
+        }
+        .footer .copy-right .plice {
+            display: inline-block;
+            width: 15px;
+            height: 17px;
+            background: url("images/icons_5859e57.png") no-repeat -622px -96px;
+            vertical-align: -3px;
+        }
+
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="left">
+        <div class="weather-wrap">
+            <span>北京:</span>
+            <img src="images/weather.png" alt="天气">
+            <span class="temperature">19℃</span>
+            <span class="pollute">中度</span>
+            <span class="num">117</span>
+        </div>
+        <div class="link">
+            <a href="#">换肤</a>
+            <a href="#">消息</a>
+        </div>
+    </div>
+    <div class="right">
+        <ul class="menu">
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">hao123</a></li>
+            <li><a href="#">地图</a></li>
+            <li><a href="#">视频</a></li>
+            <li><a href="#">贴吧</a></li>
+            <li><a href="#">学术</a></li>
+        </ul>
+        <div class="other">
+            <div class="profile">
+                <a href="#">撩课学院</a>
+                <a href="#">设置</a>
+            </div>
+            <button class="more">更多产品</button>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+    <div class="searchBlock">
+        <h1 class="logo"><img width="270" height="129" src="images/bd_logo1.png" alt=""></h1>
+        <div class="search-wrap">
+            <input type="text">
+            <span class="icon"></span>
+            <button>百度一下</button>
+        </div>
+    </div>
+    <div class="news">
+        <div class="title">
+            <div class="follow">
+                <i class=""></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="code">
+        <img src="images/zbios_efde696.png" alt="二维码">
+        <p>百度</p>
+    </div>
+    <div class="flink">
+        <a href="#">把百度设为首页</a>
+        <a href="#">关于百度</a>
+        <a href="#">About Baidu</a>
+        <a href="#">百度推广</a>
+    </div>
+    <div class="copy-right">
+        <sppan>&copy;2019 Baidu</sppan>
+        <a href="#">使用百度前必读</a>
+        <a href="#">意见反馈</a>
+        <i class="copy"></i>
+        <a href="#">京ICP证030173号  京公网安备11000002000001号</a>
+        <i class="plice"></i>
+    </div>
+</footer>
+</body>
+</html>
