@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91cdbda1-c0e3-47bf-9d36-24b7d07b67f4" name="Default Changelist" comment="" />
+    <list default="true" id="91cdbda1-c0e3-47bf-9d36-24b7d07b67f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-百度.html" beforeDir="false" afterPath="$PROJECT_DIR$/02-百度.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$月23日作业.docx" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -27,27 +32,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/02-百度.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="304">
-                  <caret line="225" column="26" selection-start-line="225" selection-start-column="26" selection-end-line="225" selection-end-column="26" />
-                  <folding>
-                    <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="e#5032#5038#1" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/../README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor>
-                    <caret column="4" selection-start-column="4" selection-end-column="4" />
-                  </first_editor>
-                  <second_editor />
+                <state relative-caret-position="646">
+                  <caret line="453" column="44" selection-start-line="453" selection-start-column="44" selection-end-line="453" selection-end-column="44" />
                 </state>
               </provider>
             </entry>
@@ -59,10 +48,43 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/02-百度.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="516">
-                  <caret line="165" column="25" lean-forward="true" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
+                <state relative-caret-position="704">
+                  <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
                   <folding>
-                    <element signature="e#5032#5038#1" expanded="true" />
+                    <element signature="e#114#172#0" />
+                    <element signature="e#185#226#0" />
+                    <element signature="e#237#273#0" />
+                    <element signature="e#289#353#0" />
+                    <element signature="e#559#595#0" />
+                    <element signature="e#623#665#0" />
+                    <element signature="e#702#860#0" />
+                    <element signature="e#904#1097#0" />
+                    <element signature="e#1143#1181#0" />
+                    <element signature="e#1210#1246#0" />
+                    <element signature="e#1277#1320#0" />
+                    <element signature="e#1344#1381#0" />
+                    <element signature="e#1411#1447#0" />
+                    <element signature="e#1480#1548#0" />
+                    <element signature="e#1583#1625#0" />
+                    <element signature="e#1656#1692#0" />
+                    <element signature="e#1732#1768#0" />
+                    <element signature="e#1810#1853#0" />
+                    <element signature="e#1890#2063#0" />
+                    <element signature="e#2408#2513#0" />
+                    <element signature="e#2547#2751#0" />
+                    <element signature="e#2785#3003#0" />
+                    <element signature="e#3277#3301#0" />
+                    <element signature="e#3329#3353#0" />
+                    <element signature="e#3465#3489#0" />
+                    <element signature="e#3355#3395#0" />
+                    <element signature="e#3419#3459#0" />
+                    <element signature="e#3486#3533#0" />
+                    <element signature="e#3557#3601#0" />
+                    <element signature="e#3627#3695#0" />
+                    <element signature="e#3724#3760#0" />
+                    <element signature="e#3791#3858#0" />
+                    <element signature="e#3893#4104#0" />
+                    <element signature="e#4140#4351#0" />
                   </folding>
                 </state>
               </provider>
@@ -79,12 +101,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/01-轮播图定位.html" />
-        <option value="$PROJECT_DIR$/02-百度.html" />
         <option value="$PROJECT_DIR$/../README.md" />
+        <option value="$PROJECT_DIR$/02-百度.html" />
       </list>
     </option>
   </component>
@@ -94,11 +119,13 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,14 +142,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,12 +175,13 @@
       <option name="presentableId" value="Default" />
       <updated>1555997937536</updated>
       <workItem from="1555997942714" duration="3888000" />
-      <workItem from="1556019450157" duration="1624000" />
+      <workItem from="1556019450157" duration="2029000" />
+      <workItem from="1556072825944" duration="6588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5512000" />
+    <option name="totallyTimeSpent" value="12505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -181,16 +210,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-轮播图定位.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/zbios_efde696.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -203,17 +222,6 @@
     <entry file="file://$PROJECT_DIR$/images/bd_logo1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/02-百度.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="225" column="26" selection-start-line="225" selection-start-column="26" selection-end-line="225" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#5032#5038#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -221,6 +229,59 @@
             <caret column="4" selection-start-column="4" selection-end-column="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-轮播图定位.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-百度.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+          <folding>
+            <element signature="e#114#172#0" />
+            <element signature="e#185#226#0" />
+            <element signature="e#237#273#0" />
+            <element signature="e#289#353#0" />
+            <element signature="e#559#595#0" />
+            <element signature="e#623#665#0" />
+            <element signature="e#702#860#0" />
+            <element signature="e#904#1097#0" />
+            <element signature="e#1143#1181#0" />
+            <element signature="e#1210#1246#0" />
+            <element signature="e#1277#1320#0" />
+            <element signature="e#1344#1381#0" />
+            <element signature="e#1411#1447#0" />
+            <element signature="e#1480#1548#0" />
+            <element signature="e#1583#1625#0" />
+            <element signature="e#1656#1692#0" />
+            <element signature="e#1732#1768#0" />
+            <element signature="e#1810#1853#0" />
+            <element signature="e#1890#2063#0" />
+            <element signature="e#2408#2513#0" />
+            <element signature="e#2547#2751#0" />
+            <element signature="e#2785#3003#0" />
+            <element signature="e#3277#3301#0" />
+            <element signature="e#3329#3353#0" />
+            <element signature="e#3465#3489#0" />
+            <element signature="e#3355#3395#0" />
+            <element signature="e#3419#3459#0" />
+            <element signature="e#3486#3533#0" />
+            <element signature="e#3557#3601#0" />
+            <element signature="e#3627#3695#0" />
+            <element signature="e#3724#3760#0" />
+            <element signature="e#3791#3858#0" />
+            <element signature="e#3893#4104#0" />
+            <element signature="e#4140#4351#0" />
+          </folding>
         </state>
       </provider>
     </entry>

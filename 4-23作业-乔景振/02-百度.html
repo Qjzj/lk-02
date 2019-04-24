@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+        a {
+            color: #333;
+        }
+        button {
+            outline: none;
+            border: none;
+        }
+
+        .header {
+            padding-left: 10px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+        }
+        .header .left {
+            float: left;
+        }
+        .header .left span {
+            margin-right: 5px;
+        }
+        .header .left .weather-wrap {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+            padding-right: 6px;
+            height: 30px;
+        }
+        .header .left .weather-wrap::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 10px;
+            width: 2px;
+            height: 12px;
+            background: #999;
+        }
+        .header .left .weather-wrap .pollute {
+            color: orange;
+        }
+        .header .left .link {
+            float: left;
+        }
+        .header .left .link a {
+            margin-right: 10px;
+        }
+        .header .right {
+            float: right;
+        }
+        .header .right .menu {
+            float: left;
+        }
+        .header .right .menu li {
+            float: left;
+            margin-right: 30px;
+        }
+        .header .right .menu li a {
+            font-weight: bold;
+        }
+        .header .right .other {
+            float: left;
+        }
+        .header .right .other .profile {
+            float: left;
+        }
+        .header .right .other .profile a {
+            margin-right: 20px;
+        }
+        .header .right .other .more {
+            height: 30px;
+            width: 80px;
+            background: #398bfb;
+            color: #fff;
+            outline: none;
+            border: none;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 900px;
+            /*min-height: 500px;*/
+        }
+        .main .searchBlock {
+            margin: 0 auto;
+            width: 640px;
+        }
+        .main .searchBlock .logo {
+            padding-top: 20px;
+            text-align: center;
+        }
+        .main .search-wrap {
+            position: relative;
+            height: 38px;
+            border: 1px solid #ccc;
+        }
+        .main .search-wrap input {
+            float: left;
+            padding-right: 38px;
+            width: 500px;
+            height: 38px;
+            border: none;
+            outline: none;
+            text-indent: 5px;
+        }
+        .main .search-wrap .icon {
+            position: absolute;
+            left: 510px;
+            top: 10px;
+            width: 18px;
+            height: 18px;
+            background: url("images/camera_new_5606e8f.png") no-repeat 0 0;
+        }
+        .main .search-wrap button {
+            margin-top: -1px;
+            float: right;
+            width: 100px;
+            height: 40px;
+            background: #398bfb;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .main .news {
+            margin-top: 100px;
+            border: 1px solid #ccc;
+        }
+        .main .news .title {
+            height: 40px;
+            line-height: 40px;
+            font-size: 13px;
+            border-bottom: 1px solid #ccc;
+        }
+        .main .news .title>div {
+            float: left;
+            height: 30px;
+        }
+        .main .news .title i {
+            display: inline-block;
+            margin-right: 3px;
+            width: 18px;
+            height: 18px;
+            background: url('images/card_setts_fdb17359.png') no-repeat -16px 0 ;
+            vertical-align: -4px;
+        }
+        .main .news .title .follow {
+            padding: 0 20px;
+        }
+
+        .main .news .title .nav {
+
+        }
+        .main .news .title .nav span {
+            display: inline-block;
+            padding: 0 25px;
+        }
+        .main .news .title .nav span.current {
+            background: #9a9da2;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .main .news .title .setting {
+            float: right;
+            margin-right: 10px;
+        }
+        .main .news .title .setting i {
+            background: url("images/card_setts_fdb17359.png") no-repeat -121px -48px;
+        }
+        .main .content {
+            padding: 15px;
+            overflow: hidden;
+        }
+        .main .content .left {
+            float: left;
+            width: 560px;
+        }
+        .main .content .left .line {
+            position: relative;
+            height: 25px;
+            line-height: 25px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .main .content .left .line::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 12px;
+            height: 1px;
+            background: #ccc;
+            z-index: -1;
+
+        }
+        .main .content .left .line span {
+            padding: 0 20px;
+            background: #fff;
+        }
+        .main .content .left .item {
+            padding: 25px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .main .content .left .img-item{
+            padding: 0;
+            overflow: hidden;
+        }
+        .main .content .left .img-item .img-wrap {
+            float: left;
+            padding: 15px 0;
+            width: 180px;
+            height: 150px;
+        }
+        .main .content .left .img-item .img-wrap img {
+
+        }
+        .main .content .left .img-item .txt-wrap {
+            float: left;
+            width: 380px;
+            padding: 20px;
+            height: 110px;
+            box-sizing: border-box;
+        }
+        .main .content .left .img-item .txt-wrap .tag {
+            display: inline-block;
+            padding: 0 8px;
+            color: red;
+            border: 1px solid red;
+            border-radius: 3px;
+        }
+        .main .content .left .img-item .txt-wrap h2 {
+            margin-top: 18px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .main .content .left .img-item .txt-wrap p {
+            font-size: 12px;
+            color: #666;
+        }
+        .main .content .left .item h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .main .content .left .item .date {
+            font-size: 12px;
+            color: #666;
+        }
+        .main .content .left .item:last-child {
+            border: none;
+        }
+        .main .content .right {
+            float: right;
+            width: 300px;
+        }
+        .main .content .right .right-title {
+            padding: 0 15px 0 0;
+            height: 30px;
+        }
+        .main .content .right .right-title h3 {
+            float: left;
+            font-size: 14px;
+            color: #666;
+        }
+        .main .content .right .right-title .refresh {
+            float: right;
+            font-size: 13px;
+        }
+        .main .content .right .right-title .refresh i {
+            display: inline-block;
+            width: 18px;
+            height: 15px;
+            background: url('images/news_88aeb6fe.png') no-repeat -23px -24px;
+            vertical-align: -2px;
+        }
+        .main .content .right .link-block {
+            line-height: 40px;
+        }
+        .main .content .right .link-block a {
+            float: left;
+            width: 50%;
+            padding-right: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-size: 15px;
+            color: #333;
+        }
+
+
+
+        .footer {
+            margin-bottom: 20px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .footer a {
+            font-size: 12px;
+        }
+        .footer .code  {
+            padding: 20px 0;
+        }
+        .footer .code img {
+            /*margin-bottom: 5px;*/
+        }
+        .footer .flink {
+            margin-bottom: 10px;
+        }
+        .footer .flink a {
+            margin-right: 25px;
+            color: #666;
+        }
+        .footer .copy-right {
+            color: #666;
+        }
+        .footer .copy-right a {
+            margin-right: 5px;
+            color: #666;
+        }
+        .footer .copy-right .copy {
+            display: inline-block;
+            width: 16px;
+            height: 17px;
+            background: url("images/icons_5859e57.png") no-repeat -599px -96px;
+            vertical-align: -3px;
+        }
+        .footer .copy-right .plice {
+            display: inline-block;
+            width: 15px;
+            height: 17px;
+            background: url("images/icons_5859e57.png") no-repeat -622px -96px;
+            vertical-align: -3px;
+        }
+
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<header class="header">
+    <div class="left">
+        <div class="weather-wrap">
+            <span>北京:</span>
+            <img src="images/weather.png" alt="天气">
+            <span class="temperature">19℃</span>
+            <span class="pollute">中度</span>
+            <span class="num">117</span>
+        </div>
+        <div class="link">
+            <a href="#">换肤</a>
+            <a href="#">消息</a>
+        </div>
+    </div>
+    <div class="right">
+        <ul class="menu">
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">hao123</a></li>
+            <li><a href="#">地图</a></li>
+            <li><a href="#">视频</a></li>
+            <li><a href="#">贴吧</a></li>
+            <li><a href="#">学术</a></li>
+        </ul>
+        <div class="other">
+            <div class="profile">
+                <a href="#">撩课学院</a>
+                <a href="#">设置</a>
+            </div>
+            <button class="more">更多产品</button>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+    <div class="searchBlock">
+        <h1 class="logo"><img width="270" height="129" src="images/bd_logo1.png" alt=""></h1>
+        <div class="search-wrap">
+            <input type="text">
+            <span class="icon"></span>
+            <button>百度一下</button>
+        </div>
+    </div>
+    <div class="news">
+        <div class="title">
+            <div class="follow">
+                <i class=""></i>
+                我的关注
+            </div>
+            <div class="nav">
+                <span class="current">推荐</span>
+                <span>导航</span>
+            </div>
+            <div class="setting">
+                <i></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="line">
+                    <span>
+                        <i></i>
+                        以下消息根据您的兴趣推荐
+                    </span>
+                </div>
+                <div class="item img-item">
+                    <div class="img-wrap">
+                        <img src="images/news1.jfif" width="180" height="120" alt="new">
+                    </div>
+                    <div class="txt-wrap">
+                        <h2>揭秘“检阅舰”西宁舰：北海舰队第一艘052D导弹驱逐舰</h2>
+                        <p>
+                            <span class="author">环球时报 04-23 21:39</span>
+                            <span class="tag">热点</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h2>过瘾！海上阅兵高清大图来袭，还有航拍视角</h2>
+                    <span class="date">04-23 08:39</span>
+                </div>
+                <div class="item">
+                    <h2>过瘾！海上阅兵高清大图来袭，还有航拍视角</h2>
+                    <span class="date">04-23 21:39</span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-title">
+                    <h3>时事热点</h3>
+                    <span class="refresh">
+                        <i></i>
+                        换一换
+                    </span>
+                </div>
+                <div class="link-block">
+                    <a href="#">都快来感受的口感好的空间</a>
+                    <a href="#">电话高科技的时刻</a>
+                    <a href="#">伶仃孤苦手机端快捷</a>
+                    <a href="#">电话高科技的时刻</a>
+                    <a href="#">电话高科技的时刻</a>
+                    <a href="#">电话高科技的时刻</a>
+                    <a href="#">都快来感受的口感好的空间</a>
+                    <a href="#">电话高科技的时刻</a>
+                    <a href="#">电话高科技的时刻</a>
+                    <a href="#">都快来感受的口感好的空间</a>
+                    <a href="#">电话高科技的时刻</a>
+                    <a href="#">伶仃孤苦手机端快捷</a>
+                    <a href="#">电话高科技的时刻</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="code">
+        <img src="images/zbios_efde696.png" alt="二维码">
+        <p>百度</p>
+    </div>
+    <div class="flink">
+        <a href="#">把百度设为首页</a>
+        <a href="#">关于百度</a>
+        <a href="#">About Baidu</a>
+        <a href="#">百度推广</a>
+    </div>
+    <div class="copy-right">
+        <sppan>&copy;2019 Baidu</sppan>
+        <a href="#">使用百度前必读</a>
+        <a href="#">意见反馈</a>
+        <i class="copy"></i>
+        <a href="#">京ICP证030173号  京公网安备11000002000001号</a>
+        <i class="plice"></i>
+    </div>
+</footer>
+</body>
+</html>
