@@ -1,0 +1,389 @@
+/********************公共样式-begin*******************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+    background-color: #f6f6f6;
+    font-size: 15px;
+    color: #1a1a1a;
+
+    height: 3000px;
+}
+
+a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/********************公共样式-end*******************/
+
+/********************头部样式-begin*******************/
+#hd{
+    width: 100%;
+    height: 52px;
+    background-color: #fff;
+    /*定位*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*块阴影*/
+    box-shadow: 0 1px 1px #e7e7e7;
+}
+
+#hd .hd-main{
+    height: 100%;
+    display: flex;
+    /*background-color: skyblue;*/
+}
+
+#hd .hd-main .hd-main-l{
+    flex: 1;
+    /*background-color: red;*/
+    /*伸缩布局*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#hd .hd-main .hd-main-l>a{
+    display: block;
+    margin-right: 20px;
+}
+
+#hd .hd-main .hd-main-l>a .lk-logo{
+    width: 100px;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-nav > a{
+    /*background-color: skyblue;*/
+    padding: 0 10px;
+    color: #8590a6;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-nav > a.current{
+    color: #444444;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-nav > a:hover{
+    color: #175199;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-search{
+    margin-left: 15px;
+    /*伸缩布局*/
+    display: flex;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-search .hd-main-search-bar{
+    position: relative;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-search .hd-main-search-bar input{
+    width: 350px;
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    background-color: #efefef;
+    padding-left: 8px;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-search .hd-main-search-bar input:focus{
+    outline: none;
+    border-color: #175199;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-search .hd-main-search-bar i{
+    width: 20px;
+    height: 20px;
+    color: #999999;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-search .hd-main-search-btn{
+    background-color: #0084ff;
+    border: none;
+    width: 60px;
+    height: 36px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    outline: none;
+}
+
+#hd .hd-main  .hd-main-l .hd-main-search .hd-main-search-btn:hover{
+    background-color: #175199;
+    cursor: pointer;
+}
+
+#hd .hd-main .hd-main-r{
+    display: flex;
+    align-items: center;
+}
+
+#hd .hd-main .hd-main-r a{
+    display: block;
+    margin: 0 15px;
+}
+
+#hd .hd-main .hd-main-r a i{
+    color: #8590a6;
+    font-size: 20px;
+}
+
+#hd .hd-main .hd-main-r a img{
+    width: 30px;
+}
+/********************头部样式-end*******************/
+
+/********************内容样式-begin*******************/
+#main{
+    /*background-color: red;*/
+    margin-top: 62px;
+    display: flex;
+}
+
+#main .main-left{
+    width: 690px;
+    height: 800px;
+    margin-right: 10px;
+    background-color: #fff;
+    /*块阴影*/
+    box-shadow: 0 0 5px #e7e7e7;
+}
+
+#main .main-left .card{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #e7e7e7;
+    box-sizing: border-box;
+}
+
+
+#main .main-left .card ul li{
+    float: left;
+    /*background-color: red;*/
+    line-height: 58px;
+}
+
+#main .main-left .card ul li a{
+    /*background-color: skyblue;*/
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+#main .main-left .card ul li a.current{
+    border-bottom: 2px solid #0077e6;
+    font-weight: bolder;
+}
+
+#main  .main-left .content{
+    width: 690px;
+    height: 250px;
+    box-sizing: border-box;
+    border-bottom:1px solid #cccccc;
+    padding: 30px 20px 20px 18px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*background-color: #aaa;*/
+}
+#main  .main-left .content>a{
+    display: block;
+    font-size: 18px;
+    font-weight: bolder;
+    flex: 1;
+    height: 100%;
+
+    box-sizing: border-box;
+}
+#main  .main-left .content .content-body{
+    flex: 2;
+
+    display: flex;
+    flex-basis: 108px;
+    /*background-color: #ddd;*/
+    margin-top:10px;
+}
+#main  .main-left .content .content-body .content-body-left{
+    flex:1;
+    border-radius: 5%;
+    /*overflow: hidden;*/
+}
+#main  .main-left .content .content-body .content-body-left a img {
+
+    width: 100%;
+    height: 106px;
+    border-radius: 5%;
+}
+#main  .main-left .content .content-body .content-body-right{
+    flex:2;
+    /*background-color: yellow;*/
+    margin-left:10px;
+}
+#main  .main-left .content .content-body .content-body-right p{
+    line-height: 26px;
+}
+#main  .main-left .content .content-body .content-body-right i{
+   /* content: "\ea43";*/
+    font-size: 16px;
+    color: #8590a6;
+}
+#main  .main-left .content .content-body .content-body-right a{
+    /*display: inline-block;*/
+    color:blue;
+}
+#main  .main-left .content .content-body .content-body-right a:hover{
+    cursor: pointer;
+}
+#main  .main-left .content .content-foot{
+    flex:1;
+    /*background-color: red;*/
+    margin-top:0px;
+}
+#main  .main-left .content .content-foot >a:first-child{
+    width: 118px;
+    height: 40px;
+    background-color: skyblue;
+    border-radius: 5%;
+    text-align: center;
+    line-height: 40px;
+    color:blue;
+}
+#main  .main-left .content .content-foot >a:nth-child(2){
+    width: 40px;
+    height: 40px;
+    background-color: skyblue;
+    border-radius: 10%;
+    text-align: center;
+    line-height: 40px;
+    color:blue;
+}
+#main  .main-left .content .content-foot a{
+    display: inline-block;
+
+}
+#main  .main-left .content .content-foot ul{
+    display:inline-block;
+    margin-left:20px;
+}
+#main  .main-left .content .content-foot ul li{
+    float: left;
+    margin-left: 40px;
+    line-height: 16px;
+}
+#main  .main-left .content .content-foot ul li a{
+    color:#ddd;
+}
+
+
+
+#main .main-right{
+    flex: 1;
+    /*background-color: yellowgreen;*/
+    /*display: flex;
+    flex-direction: column;*/
+}
+#main .main-right .one{
+    /*flex:1;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 118px;
+    /*flex-basis: 118px;*/
+    margin-bottom: 10px;
+    background-color:white;
+
+    box-shadow: 1px 1px #ccc;
+}
+#main .main-right .one  div:hover{
+    cursor: pointer;
+}
+#main .main-right .one  div a{
+    text-align: center;
+    margin:5px 0;
+}
+#main .main-right .one  div i{
+    color:#ccc;
+    font-size: 20px;
+}
+#main .main-right .one a{
+    display: block;
+}
+#main .main-right .two{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 202px;
+    background-color: white;
+    margin-bottom:10px;
+    box-shadow: 1px 1px #ccc;
+}
+#main .main-right .two div{
+    flex:30%;
+    /*background-color: #9a6e3a;*/
+    text-align: center;
+}
+#main .main-right .two div:hover{
+    cursor: pointer;
+}
+#main .main-right .two  div a{
+    text-align: center;
+    margin:5px 0;
+}
+#main .main-right .two  div i{
+    color:#ccc;
+    font-size: 20px;
+}
+#main .main-right .two a{
+    display: block;
+}
+#main .main-right .three,#main .main-right .four{
+    position: relative;
+    box-shadow: 1px 1px #ccc;
+}
+#main .main-right .three .close,#main .main-right .four .close{
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 100%;
+    position: absolute;
+    top:2px;
+    right:2px;
+    text-align: center;
+}
+#main .main-right .three:hover .close,#main .main-right .four:hover .close{
+    display: block;
+    cursor: pointer;
+}
+#main .main-right .three,main .main-right .three img{
+    width: 100%;
+    height: 250px;
+}
+#main .main-right .four,main .main-right .four img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+
+/********************内容样式-end*******************/

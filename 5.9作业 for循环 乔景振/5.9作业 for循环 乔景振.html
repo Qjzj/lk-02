@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>for 循环绘制图形</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+        span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            overflow: hidden;
+        }
+        span img {
+            margin-left: 5px;
+            margin-top: 5px;
+            float: left;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+
+<body>
+<script for="正方形" type="text/html">
+    let n = 5;
+    for (let i=0; i<n; i++) {
+        for (let j=0; j<n+6; j++) {
+            document.write('*')
+        }
+        document.write('</br>')
+    }
+</script>
+<script for="尖角在上的三角形" type="text/html">
+    let n = 5;
+    for (let i=0; i<n; i++) {
+        for (let j=0; j<=i; j++) {
+            document.write('*')
+        }
+        document.write('</br>')
+    }
+</script>
+<script for="尖角在下的三角形" type="text/html">
+    let n = 5;
+
+    for (let i=0; i<n; i++) {
+        for (let j=0; j<n-i; j++) {
+            document.write('*');
+        }
+        document.write('</br>')
+    }
+</script>
+<script for="特殊三角形" type="text/html">
+    let n = 5;
+
+    for (let i=1; i<n; i++) {
+        for (let j=1; j<=i; j++) {
+            document.write(j);
+        }
+        document.write('</br>')
+    }
+</script>
+<script for="正三角形">
+    let n = 5;
+
+    let c = Math.floor(n);
+
+    for (let i=0; i<=n; i++) {
+        for (let j=0; j<= c+i; j++) {
+            if(j >= c-i) {
+                document.write('<span><img src="./img/face.jpg" alt=""></span>');
+            }else {
+                document.write('<span></span>');
+            }
+        }
+        document.write('</br>')
+    }
+
+</script>
+</body>
+</html>

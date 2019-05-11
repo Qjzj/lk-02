@@ -1,0 +1,316 @@
+.header{
+    padding: 0 50px;
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    line-height: 45px;
+    overflow: hidden;
+}
+.header .header-l {
+    float: left;
+}
+.header .header-l img{
+    height: 45px;
+}
+.header .header-c {
+    margin: 0 auto;
+    width: 1000px;
+}
+.header .header-c .nav {
+    float: left;
+}
+.header .header-c .nav a {
+    margin-right: 15px;
+    height: 45px;
+    line-height: 45px;
+    color: #666;
+    font-size: 15px;
+}
+.header .header-c .nav a:hover {
+    color: #ea6f5a;
+}
+.header .header-c .nav a:nth-child(1) img{
+    vertical-align: -8px;
+    width: 26px;
+    height: 26px;
+}
+.header .header-c .nav a:nth-child(2) img,
+.header .header-c .nav a:nth-child(3) img{
+    vertical-align: -5px;
+    width: 20px;
+    height: 20px;
+}
+.header .header-c .search {
+    float: left;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 5px;
+    height: 35px;
+    width: 260px;
+    background: #eee;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.header .header-c .search input[type='text'] {
+    display: block;
+    padding: 0 10px;
+    width: 200px;
+    height: 35px;
+    border: none;
+    background: #eee;
+}
+.header .header-c .search img{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height:25px;
+}
+.header .header-r {
+    float: right;
+}
+.header .header-r>a {
+    float: left;
+    height: 45px;
+}
+.header .header-r .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.header .header-r .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header-r .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.header .header-r .write {
+    margin-top: 6px;
+    padding: 0 15px;
+    height: 32px;
+    line-height: 32px;
+    background: #ea6f5a;
+    border-radius:  15px;
+    color: #fff;
+}
+.header .header-r .write img {
+    vertical-align: -6px;
+    margin-right: 5px;
+}
+.main {
+    margin: 10px auto;
+    display: flex;
+    width: 1000px;
+}
+.main .main-l {
+    margin-right: 15px;
+    flex: 5;
+}
+.main .main-l .banner {
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main .main-l .banner img {
+    width: 100%;
+}
+.main .main-l .columns {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.main .main-l .columns>a {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding-left: 32px;
+    height: 32px;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 32px;
+    text-align: center;
+    overflow: hidden;
+}
+.main .main-l .columns>a:nth-child(6) {
+    margin-right: 0;
+}
+.main .main-l .columns>a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+}
+.main .main-l .columns>a span {
+    padding: 0 20px;
+    color: #333;
+    font-size: 13px;
+}
+.main .main-l .columns .more {
+    margin-left: 10px;
+    padding-left: 0;
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: #666;
+}
+.main .main-l .list {
+
+}
+.main .main-l .list .item {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+.main .main-l .list .item>img {
+    float: right;
+    width: 150px;
+    height: 120px;
+    border-radius: 3px;
+}
+.main .main-l .list .item .content {
+    margin-right: 160px;
+}
+.main .main-l .list .item .content .title {
+    font-size: 18px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.main .main-l .list .item .content p {
+    height: 60px;
+    line-height: 26px;
+    font-size: 13px;
+    color: #666;
+}
+.main .main-l .list .item .content .footbar {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.main .main-l .list .item .content .footbar .author {
+    color: #555;
+}
+.main .main-l .list .item .content .footbar a {
+    margin-left: 15px;
+    font-size: 12px;
+    color: #666;
+}
+.main .main-l .list .item .content .footbar img {
+    width: 25px;
+    height: 25px;
+    vertical-align: -7px;
+}
+
+.main .main-r {
+    flex: 2;
+}
+.main .main-r .tags {
+
+}
+.main .main-r .tags p {
+    margin-bottom: 8px;
+}
+.main .main-r .tags p:last-child {
+    margin: 0;
+}
+.main .main-r .tags p img {
+    width: 100%;
+    height: 54px;
+    vertical-align: top;
+}
+.main .main-r .download-app {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 15px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.main .main-r .download-app img {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.main .main-r .download-app dl {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main .main-r .download-app dl dt {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.main .main-r .download-app dl dd {
+    font-size: 13px;
+    color: #666;
+}
+.main .main-r .recommend {
+    margin-top: 15px;
+}
+.main .main-r .recommend>.title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.main .main-r .recommend>.title > a {
+    font-size: 13px;
+}
+.main .main-r .recommend .list {
+
+}
+.main .main-r .recommend .list .item {
+    display: flex;
+    padding: 8px;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.main .main-r .recommend .list .item:last-child {
+    border-bottom: none;
+}
+.main .main-r .recommend .list .item img {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.main .main-r .recommend .list .item .content {
+    display: flex;
+    flex: 1;
+    max-width: 120px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.main .main-r .recommend .list .item .content .title {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.main .main-r .recommend .list .item .content .desc {
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main .main-r .recommend .list .item  .btn {
+    margin-left: 8px;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #54aaf8;
+    cursor: pointer;
+}

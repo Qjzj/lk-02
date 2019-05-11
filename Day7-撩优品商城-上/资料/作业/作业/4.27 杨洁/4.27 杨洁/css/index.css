@@ -1,0 +1,332 @@
+/*******************************公共样式-start**********************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+    background-color: #f6f6f6;
+    font-size: 15px;
+    color: #1a1a1a;
+    height: 3000px;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*******************************公共样式-end**********************************/
+
+/*******************************头部-start**********************************/
+#hd{
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow:  0 1px 1px #e7e7e7;
+    background-color: #fff;
+    z-index: 999;
+}
+#hd .hd-main{
+    display: flex;
+    height: 100%;
+}
+/*头部左边*/
+#hd .hd-main>.hd-left{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#hd .hd-main>.hd-left>.hd-main-logo>a{
+    display: block;
+    margin-right: 20px;
+
+}
+#hd .hd-main>.hd-left>.hd-main-logo>a>img{
+    width: 100px;
+}
+#hd .hd-main>.hd-left>.hd-main-nav>a{
+    padding: 0 10px;
+    color: #8590a6;
+}
+#hd .hd-main>.hd-left>.hd-main-nav>a.current{
+    color: #444444;
+}
+#hd .hd-main>.hd-left>.hd-main-nav>a:hover{
+    color: #175199;
+}
+#hd .hd-main>.hd-left>.hd-main-search{
+    margin-left: 15px;
+    display: flex;
+}
+#hd .hd-main>.hd-left>.hd-main-search>.hd-main-search-bar{
+    position: relative;
+}
+#hd .hd-main>.hd-left>.hd-main-search>.hd-main-search-bar input{
+    width: 350px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 0 8px;
+    background-color: #efefef;
+}
+#hd .hd-main>.hd-left>.hd-main-search>.hd-main-search-bar input:focus{
+    outline: none;
+    border-color: #175199;
+}
+#hd .hd-main>.hd-left>.hd-main-search>.hd-main-search-bar i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #999999;
+    font-size: 18px;
+}
+#hd .hd-main>.hd-left>.hd-main-search .hd-search-btn{
+    background-color: #0084ff;
+    width: 56px;
+    height: 34px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    color: #ffffff;
+}
+#hd .hd-main>.hd-left>.hd-main-search .hd-search-btn:hover{
+    background-color: #0077e6;
+}
+/*头部右边*/
+#hd .hd-main>.hd-right{
+    display: flex;
+    align-items: center;
+}
+#hd .hd-main>.hd-right a{
+    margin: 0 15px;
+}
+#hd .hd-main>.hd-right a img{
+    width: 30px;
+}
+#hd .hd-main>.hd-right a i{
+    font-size: 20px;
+    color: #8590a6;
+}
+/*******************************头部-end**********************************/
+/*******************************内容-start**********************************/
+#main{
+    margin-top: 62px;
+    display: flex;
+}
+#main .main-left{
+    width: 690px;
+    margin-right: 10px;
+    box-shadow: 0 0 5px #e7e7e7;
+}
+/*主体左边头部*/
+#main .main-left .main-top{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #e7e7e7;
+
+}
+#main .main-left .main-top ul{
+    display: flex;
+}
+#main .main-left .main-top ul li{
+    line-height: 58px;
+}
+#main .main-left .main-top ul li a{
+    display: inline-block;
+    margin: 0 20px;
+}
+#main .main-left .main-top ul li a.current{
+    border-bottom: 2px solid #0077e6;
+    font-weight: bold;
+}
+/*主体左边内容*/
+#main .main-left .main-content .item{
+    padding: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    flex-direction: column;
+}
+#main .main-left .main-content .item>a{
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+#main .main-left .main-content .item>.item-main{
+    display: flex;
+    flex-direction: column;
+}
+#main .main-left .main-content .item>.item-main>.item-main-top{
+    display: flex;
+    align-items: center;
+}
+#main .main-left .main-content .item>.item-main .item-main-top-l img{
+    width: 190px;
+    border-radius: 5px;
+}
+#main .main-left .main-content .item>.item-main .item-main-top-r{
+    flex: 1;
+    margin-left: 10px;
+}
+#main .main-left .main-content .item>.item-main .item-main-top-r span{
+    line-height: 26px;
+}
+#main .main-left .main-content .item>.item-main .item-main-top-r a{
+    color: #0077e6;
+    vertical-align: middle;
+}
+#main .main-left .main-content .item>.item-main .item-main-top-r a i{
+    margin-left: 3px;
+}
+
+#main .main-left .main-content .item>.item-main .item-main-bottom{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+#main .main-left .main-content .item>.item-main .item-main-bottom .one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .main-left .main-content .item>.item-main .item-main-bottom .one a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,132,255,.15);
+    color: #0077e6;
+    border-radius: 5px;
+}
+#main .main-left .main-content .item>.item-main .item-main-bottom .one a:first-child{
+    width: 120px;
+    height: 36px;
+}
+#main .main-left .main-content .item>.item-main .item-main-bottom .one a:first-child i{
+    margin-right: 5px;
+}
+#main .main-left .main-content .item>.item-main .item-main-bottom .one a:last-child{
+    width: 36px;
+    height: 36px;
+    margin-left: 5px;
+}
+#main .main-left .main-content .item>.item-main .item-main-bottom>a{
+    margin-left: 25px;
+    color: #8590a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .main-left .main-content .item>.item-main .item-main-bottom>a i{
+    margin-right: 3px;
+}
+
+/*主体内同右边*/
+#main .main-right{
+    flex: 1;
+}
+/*主体右边头部*/
+#main .main-right .main-right-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 1px #e7e7e7;
+    padding: 20px;
+}
+#main .main-right .main-right-top>a{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main .main-right .main-right-top>a i{
+    color: #8590a6;
+    font-size: 20px;
+}
+#main .main-right .main-right-top>a span{
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+/*主体右边中部*/
+#main .main-right .main-right-center{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 1px #e7e7e7;
+    margin-top: 10px;
+}
+#main .main-right .main-right-center>a{
+    width: 33%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main .main-right .main-right-center>a i{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#main .main-right .main-right-center>a span{
+    color: #8590a6;
+}
+.orangered{color: orangered !important;}
+.green{color: palegreen !important;}
+.blue{color: royalblue !important;}
+.red{color: red !important;}
+.purple{color: purple !important;}
+
+/*右边底部广告*/
+#main .main-right [class^='main-right-ad']{
+    margin-top: 10px;
+    position: relative;
+}
+#main .main-right [class^='main-right-ad'] img{
+    width: 100%;
+}
+#main .main-right [class^='main-right-ad'] .ad{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 2px 8px;
+    background-color: rgba(0,0,0,.3);
+    color: #fff;
+}
+#main .main-right [class^='main-right-ad'] span{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.6);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+    visibility: hidden;
+}
+#main .main-right [class^='main-right-ad']:hover .close{
+    visibility: visible;
+}
+/*******************************内容-end**********************************/
+/*******************************尾部-start**********************************/
+/*******************************尾部-end**********************************/

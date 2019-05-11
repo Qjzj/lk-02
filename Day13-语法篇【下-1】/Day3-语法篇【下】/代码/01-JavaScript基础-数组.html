@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    // 1）使用 Array 构造函数
+    /*
+    var arr1 = new Array(); // 空数组
+    console.log(arr1);
+
+    var arr2 = new Array(30); // 长度为20的数组
+    console.log(arr2);
+
+    var arr3 = new Array('撩课', '小撩同学', '女');
+    console.log(arr3);
+    */
+
+    // 1）使用数组字面量
+    /* var arr1 = [];
+     console.log(arr1);
+
+     var arr2 = [];
+     arr2.length = 20;
+     console.log(arr2);
+
+     var arr3 = ['撩课', '小撩同学', '女'];
+     console.log(arr3);*/
+
+    // 常用操作
+    /*var arr1 = ['张三', '李四', '王五','张三', '李四', '王五','张三', '李四', '王五','张三', '李四', '王五'];
+    // arr1.length = 10;
+    // console.log(arr1);
+    console.log(arr1[arr1.length - 1]);*/
+
+    // 定义一个空数组, 往数组中存入个人信息,  并输出
+    /* var person = [];
+     person[0] = '小撩';
+     person[1] = '女';
+     person[2] = '撩课学院';
+     console.log(person);*/
+
+    /*var person = ['小撩', '女', '撩课学院'];
+    console.log(person);*/
+
+    // 遍历数组[10, 1, 19, 22, 73],  将其中的偶数找出
+    /*var numArr = [10, 1, 19, 22, 73];
+    for(var i=0; i<numArr.length; i++){
+        // 取出每个数据
+        // console.log(numArr[i]);
+        if(numArr[i] % 2 !== 0){ // 偶数
+            console.log(numArr[i]);
+        }
+    }*/
+
+    // 将数组中值为0的去掉，不为0的存入一个新数组
+    //  [0,"刘备",0,"关羽",0,"张飞",0];
+    /*var arr = [0,"刘备",0,"关羽",0,"张飞",0];
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        if(arr[i] !== 0){
+            newArr[newArr.length] = arr[i];
+        }
+    }
+    console.log(newArr);*/
+
+    // 求一组数中的最大值和最小值，以及所在位置
+
+    // 1. 定义变量
+    var numArr = [ -99, 88, 9999, -10000, 1, -1, 99];
+    var maxValue = numArr[0], minValue = numArr[0]; // 最大值 和 最小值
+    var maxIndex = 0, minIndex = 0; //  最大值索引 和 最小值索引
+
+    // 2. 遍历数组
+    for (var i = 0; i < numArr.length; i++) {
+         // 2.1 处理最大值
+         if(numArr[i] > maxValue){
+             maxValue = numArr[i];
+             maxIndex = i;
+         }
+
+        // 2.2 处理最小值
+        if(numArr[i] < minValue){
+            minValue = numArr[i];
+            minIndex = i;
+        }
+    }
+
+    // 3. 输出
+    console.log(maxValue);
+    console.log(minValue);
+    console.log(maxIndex);
+    console.log(minIndex);
+
+</script>
+</body>
+</html>

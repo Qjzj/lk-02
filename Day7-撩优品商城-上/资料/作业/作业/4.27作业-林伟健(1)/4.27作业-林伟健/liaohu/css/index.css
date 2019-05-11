@@ -1,0 +1,374 @@
+/********************公共样式-begin*******************/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  background-color: #f6f6f6;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+/********************公共样式-end*******************/
+/********************头部样式-begin*******************/
+#lh-head {
+  width: 100%;
+  height: 52px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  background: #fff;
+  box-shadow: 0 1px 1px #E7E7E7;
+}
+#lh-head .lh-head-main {
+  display: flex;
+  height: 100%;
+}
+#lh-head .lh-head-main .lh-head-main-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-logo {
+  display: block;
+  width: 100px;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-logo img {
+  display: block;
+  width: 100px;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-nav {
+  margin-left: 30px;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-nav > a {
+  margin-right: 25px;
+  color: #8590A6;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-nav > a:hover {
+  color: #175199;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-nav > a.current {
+  color: #444444;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-search {
+  margin-left: 5px;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-search form {
+  width: 431px;
+  height: 36px;
+  position: relative;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-search form input {
+  width: 305px;
+  height: 34px;
+  border: 1px solid #E7E7E7;
+  border-radius: 5px;
+  padding: 0 33px 0 10px;
+  background: #EFEFEF;
+  outline: none;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-search form input:focus {
+  border-color: #175199;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-search form i {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 322px;
+  top: 50%;
+  margin-top: -7.5px;
+  color: #9B9B9B;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-search form button {
+  border: none;
+  width: 56px;
+  height: 34px;
+  background: #0084FF;
+  color: #fff;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+#lh-head .lh-head-main .lh-head-main-left .lh-head-search form button:hover {
+  background: #0077e6;
+}
+#lh-head .lh-head-main .lh-head-main-right {
+  display: flex;
+  align-items: center;
+}
+#lh-head .lh-head-main .lh-head-main-right a {
+  display: block;
+  font-size: 20px;
+  color: #8590A6;
+  margin-left: 30px;
+}
+#lh-head .lh-head-main .lh-head-main-right a:last-child {
+  width: 30px;
+  height: 30px;
+}
+#lh-head .lh-head-main .lh-head-main-right a:last-child img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+/********************头部样式-end*******************/
+/********************主题内容样式-begin*******************/
+#lh-main {
+  margin-top: 60px;
+  display: flex;
+  /*主体左边*/
+  /*右边*/
+}
+#lh-main .main-left {
+  width: 690px;
+  margin-right: 9px;
+  background: #fff;
+  box-shadow: 0 0 1px #E7E7E7;
+}
+#lh-main .main-left .card {
+  width: 100%;
+  height: 59px;
+}
+#lh-main .main-left .card ul {
+  width: 100%;
+  height: 59px;
+  line-height: 58px;
+  border-bottom: 1px solid #E7E7E7;
+}
+#lh-main .main-left .card ul li {
+  float: left;
+  margin-left: 19px;
+}
+#lh-main .main-left .card ul li.current {
+  font-weight: bold;
+  border-bottom: 2px solid #0077E6;
+}
+#lh-main .item {
+  width: 100%;
+  padding: 34px 21px 12px 20px;
+  border-bottom: 1px solid #E7E7E7;
+  box-sizing: border-box;
+}
+#lh-main .item .item-title {
+  width: 100%;
+}
+#lh-main .item .item-title a {
+  font-size: 19px;
+  font-weight: bold;
+}
+#lh-main .item .item-main {
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  flex-shrink: 0;
+}
+#lh-main .item .item-main .item-pic {
+  flex: 0 0 190px;
+  height: 106px;
+}
+#lh-main .item .item-main .item-pic a {
+  width: 100%;
+  display: block;
+}
+#lh-main .item .item-main .item-pic a img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+#lh-main .item .item-main .item-des {
+  margin-left: 9px;
+  line-height: 26px;
+}
+#lh-main .item .item-main .item-des a {
+  color: #0077E6;
+  position: relative;
+}
+#lh-main .item .item-main .item-des a span i {
+  position: absolute;
+  top: 3px;
+  right: -16px;
+}
+#lh-main .item .item-bot {
+  margin-top: 9px;
+  display: flex;
+}
+#lh-main .item .item-bot .item-like {
+  flex-basis: 185px;
+  display: flex;
+}
+#lh-main .item .item-bot .item-like > div {
+  width: 120px;
+  height: 36px;
+  background: #D9EDFF;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 36px;
+  color: #0077E6;
+  cursor: pointer;
+}
+#lh-main .item .item-bot .item-like > div:first-child {
+  margin-right: 5px;
+}
+#lh-main .item .item-bot .item-like > div:last-child {
+  width: 36px;
+  margin-right: 24px;
+}
+#lh-main .item .item-bot .item-other ul {
+  display: flex;
+  height: 36px;
+  align-items: center;
+}
+#lh-main .item .item-bot .item-other ul li {
+  margin-right: 24px;
+}
+#lh-main .item .item-bot .item-other ul li a {
+  display: block;
+  color: #8590A6;
+}
+#lh-main .item .item-bot .item-other ul li:last-child a span {
+  display: block;
+  position: relative;
+  top: -3px;
+}
+#lh-main .main-right {
+  width: 302px;
+}
+#lh-main .main-right .user-function {
+  width: 100%;
+}
+#lh-main .main-right .user-function > div {
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0 0 1px #ededed;
+  background: #fff;
+}
+#lh-main .main-right .user-function .fun-one {
+  padding: 34px 39px 35px 39px;
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+}
+#lh-main .main-right .user-function .fun-one > div {
+  margin-right: 33px;
+}
+#lh-main .main-right .user-function .fun-one > div:last-child {
+  margin-right: 0;
+}
+#lh-main .main-right .user-function .fun-one > div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #8590A6;
+}
+#lh-main .main-right .user-function .fun-one > div a i {
+  font-size: 20px;
+}
+#lh-main .main-right .user-function .fun-one > div a span {
+  padding-top: 12px;
+}
+#lh-main .main-right .user-function .fun-two {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#lh-main .main-right .user-function .fun-two > div {
+  width: 33.3333%;
+  height: 80px;
+  font-size: 15px;
+}
+#lh-main .main-right .user-function .fun-two > div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#lh-main .main-right .user-function .fun-two > div a i {
+  font-size: 19px;
+}
+#lh-main .main-right .user-function .fun-two > div a span {
+  padding-top: 12px;
+  color: #9590A6;
+}
+#lh-main .main-right .user-function .fun-two > div:nth-child(1) a i {
+  color: #FF4500;
+}
+#lh-main .main-right .user-function .fun-two > div:nth-child(2) a i {
+  color: #98FB98;
+}
+#lh-main .main-right .user-function .fun-two > div:nth-child(3) a i {
+  color: #4169E1;
+}
+#lh-main .main-right .user-function .fun-two > div:nth-child(4) a i {
+  color: #FF0000;
+}
+#lh-main .main-right .user-function .fun-two > div:nth-child(5) a i {
+  color: #800080;
+}
+#lh-main .main-right .ad {
+  margin-top: 10px;
+  width: 100%;
+}
+#lh-main .main-right .ad > div {
+  width: 100%;
+}
+#lh-main .main-right .ad > div a {
+  display: block;
+  position: relative;
+}
+#lh-main .main-right .ad > div a img {
+  display: block;
+  width: 100%;
+}
+#lh-main .main-right .ad > div a .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 17px;
+  background: rgba(0, 0, 0, 0.3);
+  font-style: normal;
+  border-radius: 50%;
+  color: #fff;
+  display: none;
+}
+#lh-main .main-right .ad > div a .ad-logo {
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  width: 48px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-style: normal;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+#lh-main .main-right .ad > div:last-child {
+  margin-top: 10px;
+}
+#lh-main .main-right .ad > div:hover .close {
+  display: block;
+}
+/********************主题内容样式-end*******************/
+/*# sourceMappingURL=index.css.map */

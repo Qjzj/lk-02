@@ -1,0 +1,64 @@
+/********************通用样式-start******************/
+
+/********************通用样式-end******************/
+
+
+/********************广告-start******************/
+.lk-top-banner{
+    position: relative;
+    background-color: #020169;
+}
+
+.lk-top-banner .top-banner-center{
+    height: 10rem;
+}
+
+.lk-top-banner .top-banner-center img{
+    width: 100%;
+}
+
+.lk-top-banner .banner-close{
+    position: absolute;
+    top: 0.3rem;
+    right: 9rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    background:url("./../images/close-banner.png ") 0 0;
+}
+
+.lk-top-banner .banner-close:hover{
+    background-position: 0 -1.9rem;
+}
+/********************广告-end******************/
+
+
+/********************顶部通栏-start******************/
+.lk-toolbar{
+
+}
+/********************顶部通栏-end******************/
+
+
+/********************顶部搜索-start******************/
+.lk-top-search{
+
+}
+/********************顶部搜索-end******************/
+
+/********************轮播图-start******************/
+.lk-rotation{
+
+}
+/********************轮播图-end******************/
+
+/********************主要内容-start******************/
+.lk-main{
+
+}
+/********************主要内容-end******************/
+
+/********************尾部内容-start******************/
+.lk-footer{
+
+}
+/********************尾部内容-end******************/
