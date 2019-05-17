@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul {
+            position: relative;
+            margin: 50px auto;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            background: rgba(0,0,0,.8)
+        }
+        ul li {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -240px 0 0 -150px;
+            width: 300px;
+            height: 480px;
+            border: 8px solid #fff;
+            box-sizing: border-box;
+            border-radius: 3px;
+            transition: transform 2s;
+            z-index: 1;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<ul class="img-box">
+    <li><img src="img/01.jfif" alt=""></li>
+    <li><img src="img/02.jpg" alt=""></li>
+    <li><img src="img/03.jpg" alt=""></li>
+    <li><img src="img/04.jpg" alt=""></li>
+    <li><img src="img/05.jpg" alt=""></li>
+    <li><img src="img/06.jpg" alt=""></li>
+    <li><img src="img/07.jpg" alt=""></li>
+    <li><img src="img/08.jpg" alt=""></li>
+</ul>
+
+<script>
+    let aLis = document.getElementsByTagName('li');
+
+    let windowWidth = document.body.clientWidth;
+    let liWidth = aLis[0].clientWidth;
+    let xRange = windowWidth / 2 - 100 - liWidth / 2;
+
+    // let mouseFlag = false;
+
+    for(let i=0; i < aLis.length; i++) {
+        let x = Math.random() * 2 *xRange - xRange + 'px';
+        let deg = Math.random() * 120 - 60 +'deg';
+        aLis[i].setAttribute('data-x', x);
+        aLis[i].setAttribute('data-deg', deg);
+        aLis[i].style.transform = `translateX(${x}) rotateZ(${deg})`;
+
+        aLis[i].onmouseover = function() {
+            // if(mouseFlag) return;
+            // mouseFlag = true;
+            this.style.transform = 'translateX(0) rotateZ(0)';
+            this.style.transitionDuration = '1s';
+            this.style.zIndex = '10';
+        };
+
+        aLis[i].onmouseout = function() {
+
+            let x = this.getAttribute('data-x');
+            let deg = this.getAttribute('data-deg');
+            this.style.zIndex = '1';
+            setTimeout(() => {
+                // mouseFlag = false;
+                this.style.transitionDuration = '2s';
+                this.style.transform = `translateX(${x}) rotateZ(${deg})`;
+
+            }, 1000)
+        }
+    }
+</script>
+</body>
+</html>
